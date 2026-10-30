@@ -1,0 +1,47 @@
+### uv ###
+# Virtual environment (dibuat oleh `uv sync` / `uv venv`)
+.venv/
+# Cache hasil build uv
+*.whl
+*.tar.gz
+# Folder build/distribusi
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# uv.lock sengaja TIDAK di-ignore supaya dependency-nya reproducible.
+# Kalau tetap mau diabaikan, hapus tanda # di baris berikut:
+# uv.lock
+
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Cache tooling
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Env file
+.env
+.env.*
+!.env.example
+
+### Editor / OS ###
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
