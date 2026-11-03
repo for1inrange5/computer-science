@@ -10,9 +10,13 @@ dist/
 *.egg-info/
 .eggs/
 
-# uv.lock sengaja TIDAK di-ignore supaya dependency-nya reproducible.
-# Kalau tetap mau diabaikan, hapus tanda # di baris berikut:
-# uv.lock
+# Konfigurasi project & lockfile uv (lokal saja, tidak di-commit)
+.python-version
+pyproject.toml
+uv.lock
+
+# Scaffolding package hasil `uv init`
+src/
 
 ### Python ###
 __pycache__/
